@@ -5,8 +5,17 @@ public class Passenger {
 	private int id=0;
 	private int age=0;
 	private String name="";
-	private String add ="";
-	private String phno ="";
+	private String address ="";
+	private String phoneNumber ="";
+	
+	Passenger(int id,int age,String name,String add,String phoneNumber)
+	{
+		this.id=id;
+		this.age=age;
+		this.name=name;
+		this.address=add;
+		this.phoneNumber=phoneNumber;
+	}
 	
 	void setId(int id)
 	{
@@ -25,12 +34,12 @@ public class Passenger {
 	
 	void setAddress(String add)
 	{
-		this.add=add;
+		this.address=add;
 	}
 	
 	void setPhNum(String phno)
 	{
-		this.phno=phno;
+		this.phoneNumber=phno;
 	}
 	
 	int getId()
@@ -51,12 +60,12 @@ public class Passenger {
 	
 	String getAddress()
 	{
-		return this.add;
+		return this.address;
 	}
 	
 	String getPhNum()
 	{
-		return this.phno;
+		return this.phoneNumber;
 	}
 	
 	
